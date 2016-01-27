@@ -8,7 +8,7 @@
   <header class="main-header">
     <div class="container">
       <div class="index-logo">
-        <img src="http://lorempixel.com/50/50/" alt="sedona logo">
+        <a href="index.html"><img src="http://lorempixel.com/50/50/" alt="sedona logo"></a>
       </div>
       <nav class="main-navigation">
         <ul>
@@ -28,9 +28,110 @@
       </nav>
     </div>
   </header>
-  <section class="filter">
-
-  </section>
+  <main class="conteiner">
+    <section class="filter">
+      <form>
+        <div class="filter-infrastructure">
+          <div>Инфраструктура:</div>
+          <label>
+            <input type="checkbox"><span>Бассейн</span>
+            <input type="checkbox"><span>Парковка</span>
+            <input type="checkbox"><span>WI-FI</span>
+          </label>
+        </div>
+        <div class="filter-residence">
+          <div>Тип жилья:</div>
+          <label>
+            <input type="checkbox"><span>Гостиница</span>
+            <input type="checkbox"><span>Мотель</span>
+            <input type="checkbox"><span>Апартаменты</span>
+          </label>
+        </div>
+        <div class="filter-cost">
+          <div>Стоимость с сутки (Р):</div>
+          <table>
+            <tr>
+              <td>от</td>
+              <td>до</td>
+            </tr>
+          </table>
+          <div class="filter-cost-slider">
+            <input type="range">
+          </div>
+          <a href="#">Показать</a>
+        </div>
+      </form>
+    </section>
+    <section class="result">
+      <div class="result-total">
+        <h3>Найдено: 3</h3>
+        <div class="result-total-sort">
+          <span>Сортировка</span>
+          <span>По-цене</span>
+          <span>По-типу</span>
+          <span>По-рейтингу</span>
+        </div>
+      </div>
+      <div class="result-hotels">
+        <div class="result-hotels-item">
+          <img src="http://lorempixel.com/50/50/" alt="Amara resort spa">
+          <div class="result-hotels-item-title">Amara resort&spa</div>
+          <div class="result-hotels-item-type">Гостиница</div>
+          <div class="result-hotels-item-price">от 3500 р.</div>
+          <a href="#">Подробнее</a>
+          <a href="#">Забронировать</a>
+        </div>
+        <div class="result-hotels-rating">
+          <div class="result-hotels-rating-stars"></div>
+          <div>Рейтинг:8,5</div>
+        </div>
+      </div>
+      <div class="result-hotels">
+        <div class="result-hotels-item">
+          <img src="http://lorempixel.com/50/50/" alt="Desert Quail INN">
+          <div class="result-hotels-item-title">Desert Quail INN</div>
+          <div class="result-hotels-item-type">Мотель</div>
+          <div class="result-hotels-item-price">от 2000 р.</div>
+          <a href="#">Подробнее</a>
+          <a href="#">Забронировать</a>
+        </div>
+        <div class="result-hotels-rating">
+          <div class="result-hotels-rating-stars"></div>
+          <div>Рейтинг:8,9</div>
+        </div>
+      </div>
+      <div class="result-hotels">
+        <div class="result-hotels-item">
+          <img src="http://lorempixel.com/50/50/" alt="Villas At Poco Diablo">
+          <div class="result-hotels-item-title">Villas At Poco Diablo</div>
+          <div class="result-hotels-item-type">Апартаменты</div>
+          <div class="result-hotels-item-price">от 4000 р.</div>
+          <a href="#">Подробнее</a>
+          <a href="#">Забронировать</a>
+        </div>
+        <div class="result-hotels-rating">
+          <div class="result-hotels-rating-stars"></div>
+          <div>Рейтинг:9,2</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="container">
+      <section class="footer-contacts">
+        <a href="#">#VISITSEDONA</a>
+      </section>
+      <section class="footer-social">
+        <a class="social-btn social-btn-tw" href="#">Twitter</a>
+        <a class="social-btn social-btn-fb" href="#">Facebook</a>
+        <a class="social-btn social-btn-inst" href="#">Youtube</a>
+      </section>
+      <section class="footer-copyright">
+        <p>website by</p>
+        <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+      </section>
+    </div>
+  </footer>
 
 </body>
 </html>
