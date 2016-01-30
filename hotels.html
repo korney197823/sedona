@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Отели</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
-    <div class="container">
       <div class="index-logo">
-        <a href="index.html"><img src="http://lorempixel.com/50/50/" alt="sedona logo"></a>
+        <a href="index.html"><img src="img/Logo.png" width="138" height="70" alt="sedona logo"></a>
       </div>
       <nav class="main-navigation">
         <ul>
@@ -26,27 +27,34 @@
           </li>
         </ul>
       </nav>
-    </div>
   </header>
-  <main class="conteiner">
+  <main class="container">
     <section class="filter">
       <form>
-        <div class="filter-infrastructure">
-          <div>Инфраструктура:</div>
+        <fieldset class="filter-infrastructure">
+          <legend>Инфраструктура:</legend>
           <label>
             <input type="checkbox"><span>Бассейн</span>
+          </label>
+          <label>
             <input type="checkbox"><span>Парковка</span>
+          </label>
+          <label>
             <input type="checkbox"><span>WI-FI</span>
           </label>
-        </div>
-        <div class="filter-residence">
-          <div>Тип жилья:</div>
+        </fieldset>
+        <fieldset class="filter-residence">
+          <legend>Тип жилья:</legend>
           <label>
             <input type="checkbox"><span>Гостиница</span>
+          </label>
+          <label>
             <input type="checkbox"><span>Мотель</span>
+          </label>
+          <label>
             <input type="checkbox"><span>Апартаменты</span>
           </label>
-        </div>
+        </fieldset>
         <div class="filter-cost">
           <div>Стоимость с сутки (Р):</div>
           <table>
@@ -56,9 +64,8 @@
             </tr>
           </table>
           <div class="filter-cost-slider">
-            <input type="range">
           </div>
-          <a href="#">Показать</a>
+          <button class="btn">Показать</button>
         </div>
       </form>
     </section>
@@ -67,19 +74,31 @@
         <h3>Найдено: 3</h3>
         <div class="result-total-sort">
           <span>Сортировка</span>
-          <span>По-цене</span>
-          <span>По-типу</span>
-          <span>По-рейтингу</span>
+          <ul>
+            <li>
+              <a href="#">По цене</a>
+            </li>
+            <li>
+              <a href="#"> По типу</a>
+            </li>
+            <li>
+              <a href="#">По рейтингу</a>
+            </li>
+          </ul>
+          <span class="result-total-up"></span>
+          <span class="result-total-down"></span>
         </div>
       </div>
       <div class="result-hotels">
         <div class="result-hotels-item">
           <img src="http://lorempixel.com/50/50/" alt="Amara resort spa">
           <div class="result-hotels-item-title">Amara resort&spa</div>
-          <div class="result-hotels-item-type">Гостиница</div>
-          <div class="result-hotels-item-price">от 3500 р.</div>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <span class="result-hotels-item-type">Гостиница</span>
+          <span class="result-hotels-item-price">от 3500 р.</span>
+          <div class="result-hotels-button">
+            <a href="#">Подробнее</a>
+            <a href="#">Забронировать</a>
+          </div>
         </div>
         <div class="result-hotels-rating">
           <div class="result-hotels-rating-stars"></div>
@@ -90,10 +109,12 @@
         <div class="result-hotels-item">
           <img src="http://lorempixel.com/50/50/" alt="Desert Quail INN">
           <div class="result-hotels-item-title">Desert Quail INN</div>
-          <div class="result-hotels-item-type">Мотель</div>
-          <div class="result-hotels-item-price">от 2000 р.</div>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <span class="result-hotels-item-type">Мотель</span>
+          <span class="result-hotels-item-price">от 2000 р.</span>
+          <div class="result-hotels-button">
+            <a href="#">Подробнее</a>
+            <a href="#">Забронировать</a>
+          </div>
         </div>
         <div class="result-hotels-rating">
           <div class="result-hotels-rating-stars"></div>
@@ -104,10 +125,12 @@
         <div class="result-hotels-item">
           <img src="http://lorempixel.com/50/50/" alt="Villas At Poco Diablo">
           <div class="result-hotels-item-title">Villas At Poco Diablo</div>
-          <div class="result-hotels-item-type">Апартаменты</div>
-          <div class="result-hotels-item-price">от 4000 р.</div>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <span class="result-hotels-item-type">Апартаменты</span>
+          <span class="result-hotels-item-price">от 4000 р.</span>
+          <div class="result-hotels-button">
+            <a href="#">Подробнее</a>
+            <a href="#">Забронировать</a>
+          </div>
         </div>
         <div class="result-hotels-rating">
           <div class="result-hotels-rating-stars"></div>
@@ -116,8 +139,7 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer">
-    <div class="container">
+<footer class="main-footer">
       <section class="footer-contacts">
         <a href="#">#VISITSEDONA</a>
       </section>
@@ -130,8 +152,6 @@
         <p>website by</p>
         <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
       </section>
-    </div>
   </footer>
-
 </body>
 </html>
