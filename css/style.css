@@ -71,3 +71,26 @@ h2 {
   padding-top: 75px;
   padding-bottom: 75px;
 }
+
+/*FORM*/
+
+.form form {
+  width: 568px;
+  margin: 0 auto;
+}
+
+/* FOOTER*/
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 20px;
+}
+.footer-social {
+  float: left;
+  width: 200px;
+}
+.footer-copyright {
+  float: right;
+  width: 320px;
+}

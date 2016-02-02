@@ -52,17 +52,17 @@
         </div>
         <div  class="features-three-column clearfix">
           <div class="features-three-column-content">
-            <div class="features-three-column-img" ><img src="http://lorempixel.com/50/50/" alt="Жилье"></div>
+            <div class="features-three-column-img" ><img src="img/housing.png" alt="Жилье"></div>
             <b>Жилье</b>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="features-three-column-content">
-            <div class="features-three-column-img" ><img src="http://lorempixel.com/50/50/" alt="Еда"></div>
+            <div class="features-three-column-img" ><img src="img/food.png" alt="Еда"></div>
             <b>Еда</b>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
           <div class="features-three-column-content">
-            <div class="features-three-column-img" ><img src="http://lorempixel.com/50/50/" alt="Сувениры"></div>
+            <div class="features-three-column-img" ><img src="img/souvenirs.png" alt="Сувениры"></div>
             <b>Сувениры</b>
             <p>Не только китайского, но и местного производства!</p>
           </div>
@@ -77,7 +77,7 @@
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
-        <div  class="features-three-column">
+        <div  class="features-three-column clearfix">
           <div class="features-three-column-content">
             <b>Небольшая площадь</b>
             <span> - №3 - </span>
@@ -102,27 +102,37 @@
         </div>
       </section>
       <section class="form">
-        <form action="#">
+        <form action="/echo" method="post">
             <div class="form-title">
               <h2>Поиск гостиницы в Седоне</h2>
             </div>
-            <label>
-              Дата заезда:
-              <input type="date">
-            </label>
-            <label>
-              Дата выезда:
-              <input type="date">
-            </label>
-            <label>
-              Взрослые:
-              <input type="number">
-            </label>
-            <label>
-              Дети:
-              <input type="number">
-            </label>
-            <input type="button" value="НАЙТИ">
+            <div>
+              <label>
+                Дата заезда:
+                <input type="date">
+              </label>
+            </div>
+            <div>
+              <label>
+                Дата выезда:
+                <input type="date">
+              </label>
+            </div>
+            <div>
+              <label>
+                Взрослые:
+                <input type="number">
+              </label>
+            </div>
+            <div>
+              <label>
+                Дети:
+                <input type="number">
+              </label>
+            </div>
+            <div>
+              <input type="button" value="НАЙТИ">
+            </div>
         </form>
       </section>
       <section class="map">
@@ -130,7 +140,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-contacts">
           <a href="#">#VISITSEDONA</a>
         </section>
