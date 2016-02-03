@@ -28,9 +28,17 @@ h2 {
 }
 /*HEADER*/
 .main-header {
-
-  min-height: 56px;
   background-color: #AFC7A7;
+}
+.container-header,  .container-footer{
+  width: 1080px;
+  margin: 0 auto;
+}
+.index-logo {
+  margin: 0 auto;
+  position: relative;;
+  left: 500px;
+  height: 2px;
 }
 .main-header li {
   display: inline-block;
