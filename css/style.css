@@ -83,8 +83,58 @@ h2 {
 /*FORM*/
 
 .form form {
+  /*box-sizing: border-box;*/
   width: 568px;
   margin: 0 auto;
+  outline: auto;
+}
+.form-title {
+  background-color: #766357;
+  margin-bottom: 55px;
+}
+.form-title h2 {
+  width: 340px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+}
+.form-row {
+  margin: 0 auto;
+  width: 456px;
+  margin-bottom: 30px;
+}
+.form-date {
+  float: left;
+}
+input[type="date"] {
+  width: 346px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  float: right;
+  background-color: #f2f2f2;
+  border: none;
+}
+input[type="number"] {
+  width: 114px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #f2f2f2;
+  border: none;
+}
+.form-child {
+  float: right;
+}
+.people {
+  margin-bottom: 54px;
+}
+input[type="button"] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #81b3d2;
+  border: none;
+  color: wheat;
+  font-size: 21px;
 }
 
 /* FOOTER*/
