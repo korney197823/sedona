@@ -28,20 +28,62 @@ h2 {
 }
 /*HEADER*/
 .main-header {
-  background-color: #AFC7A7;
+  padding-bottom: 15px;
+  background-color: white;
+  position: relative;
 }
 .container-header,  .container-footer{
-  width: 1080px;
+  padding-top: 15px;
+  width: 1056px;
   margin: 0 auto;
 }
 .index-logo {
-  margin: 0 auto;
-  position: relative;;
-  left: 500px;
-  height: 2px;
+  position: absolute;
+  left: 540px;
+  margin-right: -68px;
+
+}
+.main-header ul {
+  margin: 0;
+  padding: 0;
 }
 .main-header li {
-  display: inline-block;
+  float: left;
+  list-style-type: none;
+  margin-left: 0;
+
+}
+.main-header li:first-child {
+  margin-right: 147px;
+}
+.main-header li:nth-child(2) {
+  margin-right: 386px;
+}
+.main-header a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+.main-header a:hover {
+  color: #81b3d2;
+}
+.main-header a:active {
+  color: #766357;
+}
+.main-header a:active:hover {
+  color: #604e43;
+}
+.main-header a:visited {
+  color: #b2b2b2;
+}
+.main-header a:visited:active {
+  color: #b2b2b2;
+}
+.main-header li:last-child {
+  float: right;
+  margin-right: 0;
 }
 .content-logo {
   min-height: 510px;
@@ -51,6 +93,20 @@ h2 {
 .content-title {
   width: 580px;
   margin: 0 auto;
+}
+.content-title h1 {
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  font-size: 21px;
+  text-align: center;
+}
+.content-title p {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-align: center;
 }
 
 
