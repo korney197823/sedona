@@ -297,6 +297,9 @@ input[type="button"] {
   float: right;
   width: 320px;
 }
+.social-btn {
+}
+
 /*SPRITE*/
 .sprite {
   background-image: url("../img/sprite.png");
