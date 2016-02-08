@@ -11,12 +11,12 @@
   </head>
   <body>
     <header class="main-header">
+      <div class="index-logo">
+        <a href="index.html"><img src="img/Logo.png" width="138" height="70" alt="sedona logo"></a>
+      </div>
       <div class="container-header clearfix">
-        <div class="index-logo">
-          <a href="index.html"><img src="img/Logo.png" width="138" height="70" alt="sedona logo"></a>
-        </div>
         <nav class="main-navigation">
-          <ul>
+          <ul class="clearfix">
             <li>
               <a href="#">Информация</a>
             </li>
@@ -42,8 +42,8 @@
       <section class="features">
         <div class="features-two-column clearfix">
           <div class="features-two-column-content">
-            <b>Настоящий городок</b>
-            <span>- №1 -</span>
+            <div>Настоящий городок</div>
+            <div class="features-two-column-content-number"><span>-</span> №1 <span>-</span></div>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="features-two-column-img-right">
@@ -52,18 +52,18 @@
         </div>
         <div  class="features-three-column clearfix">
           <div class="features-three-column-content">
-            <div class="features-three-column-img" ><img src="img/housing.png" alt="Жилье"></div>
-            <b>Жилье</b>
+            <div class="sprite sprite-housing" ></div>
+            <div class="features-three-column-title">Жилье</div>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="features-three-column-content">
-            <div class="features-three-column-img" ><img src="img/food.png" alt="Еда"></div>
-            <b>Еда</b>
+            <div class="sprite sprite-food" ></div>
+            <div class="features-three-column-title">Еда</div>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
           <div class="features-three-column-content">
-            <div class="features-three-column-img" ><img src="img/souvenirs.png" alt="Сувениры"></div>
-            <b>Сувениры</b>
+            <div class="sprite sprite-souvenirs" ></div>
+            <div class="features-three-column-title">Сувениры</div>
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </div>
@@ -72,37 +72,37 @@
             <img src="img/diabolo_bridge.jpg" alt="Мост дьявола">
           </div>
           <div class="features-two-column-content-right">
-            <b>Там есть мост дьявола</b>
-            <span>- №2 -</span>
+            <div>Там есть мост дьявола</div>
+            <div class="features-two-column-content-number"><span>-</span> №2 <span>-</span></div>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
-        <div  class="features-three-column clearfix">
-          <div class="features-three-column-content">
-            <b>Небольшая площадь</b>
-            <span> - №3 - </span>
+        <div  class="features-three-column-down clearfix">
+          <div class="features-three-column-content-down">
+            <div class="features-three-column-content-title">Небольшая площадь</div>
+            <div class="features-three-column-content-number"> - №3 - </div>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
-          <div class="features-three-column-content">
-            <b>Красивая дорога</b>
-            <span> - №4 - </span>
+          <div class="features-three-column-content-down">
+            <div class="features-three-column-content-title">Красивая дорога</div>
+            <div class="features-three-column-content-number"> - №4 - </div>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
-          <div class="features-three-column-content">
-            <b>Мало туристов</b>
-            <span> - №5 - </span>
+          <div class="features-three-column-content-down">
+            <div class="features-three-column-content-title">Мало туристов</div>
+            <div class="features-three-column-content-number"> - №5 - </div>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </div>
         <div class="features-footer">
           <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
              предложения гостиниц в Седоне
           </p>
         </div>
       </section>
       <section class="form">
-        <form action="/echo" method="post">
+        <form action="#" method="post">
             <div class="form-title">
               <h2>Поиск гостиницы в Седоне</h2>
             </div>
@@ -145,9 +145,9 @@
           <a href="#">#VISITSEDONA</a>
         </section>
         <section class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">Twitter</a>
-          <a class="social-btn social-btn-fb" href="#">Facebook</a>
-          <a class="social-btn social-btn-inst" href="#">Youtube</a>
+          <a class="social-btn" href="#">Twitter<span class="icon-twitter"></span></a>
+          <a class="social-btn" href="#">Facebook <span class="icon-facebook"></span></a>
+          <a class="social-btn" href="#">Youtube <span class="icon-youtube"></span></a>
         </section>
         <section class="footer-copyright">
           <p>website by</p>

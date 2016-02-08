@@ -8,6 +8,45 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-sedona";
+  src: url("../fonts/symbols-sedona.woff") format("woff"),
+  url("../fonts/symbols-sedona.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+}
+
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-calendar::before { content: "\e800"; } /* "" */
+.icon-plus::before { content: "\e801"; } /* "" */
+.icon-minus::before { content: "\e802"; } /* "" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
 h1 {
   font-size: 26px;
   color: black;
@@ -28,20 +67,62 @@ h2 {
 }
 /*HEADER*/
 .main-header {
-  background-color: #AFC7A7;
+  padding-bottom: 15px;
+  background-color: white;
+  position: relative;
 }
 .container-header,  .container-footer{
-  width: 1080px;
+  padding-top: 15px;
+  width: 1056px;
   margin: 0 auto;
 }
 .index-logo {
-  margin: 0 auto;
-  position: relative;;
-  left: 500px;
-  height: 2px;
+  position: absolute;
+  left: 540px;
+  margin-right: -68px;
+
+}
+.main-header ul {
+  margin: 0;
+  padding: 0;
 }
 .main-header li {
-  display: inline-block;
+  float: left;
+  list-style-type: none;
+  margin-left: 0;
+
+}
+.main-header li:first-child {
+  margin-right: 147px;
+}
+.main-header li:nth-child(2) {
+  margin-right: 386px;
+}
+.main-header a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+.main-header a:hover {
+  color: #81b3d2;
+}
+.main-header a:active {
+  color: #766357;
+}
+.main-header a:active:hover {
+  color: #604e43;
+}
+.main-header a:visited {
+  color: #b2b2b2;
+}
+.main-header a:visited:active {
+  color: #b2b2b2;
+}
+.main-header li:last-child {
+  float: right;
+  margin-right: 0;
 }
 .content-logo {
   min-height: 510px;
@@ -52,6 +133,20 @@ h2 {
   width: 580px;
   margin: 0 auto;
 }
+.content-title h1 {
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  font-size: 21px;
+  text-align: center;
+}
+.content-title p {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+}
 
 
 /*Two column block*/
@@ -60,24 +155,134 @@ h2 {
   width: 400px;
   float: left;
   background-color: #81b3d2;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 46px;
+  padding-bottom: 46px;
+  color: #ffffff;
+}
+
+.features-two-column-content div:first-child {
+  font-size: 21px;
+  font-weight: bold;
+  width: 130px;
+  margin: 0 auto;
+  text-align: center;
+}
+.features-two-column-content-number {
+  font-size: 14px;
+  width: 130px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 17px 0;
+}
+.features-two-column-content p {
+  font-size: 14px;
+  width: 285px;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.features-two-column-content-right {
+  width: 400px;
+  float: left;
+  background-color: #81b3d2;
+  padding-top: 46px;
+  padding-bottom: 46px;
+  color: #ffffff;
+}
+
+.features-two-column-content-right div:first-child {
+  font-size: 21px;
+  font-weight: bold;
+  width: 153px;
+  margin: 0 auto;
+  text-align: center;
+}
+.features-two-column-content-number {
+  font-size: 14px;
+  width: 130px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 17px 0;
+}
+.features-two-column-content-right p {
+  font-size: 14px;
+  width: 285px;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
 }
 /*Three column block*/
+
 .features-three-column-content {
   width: 400px;
   float: left;
+  padding-top: 50px;
+  padding-bottom: 74px;
+}
+.features-three-column-down {
+  background-color: #eeeeee;
+}
+.features-three-column-content-down {
+  width: 400px;
+  float: left;
+  padding-top: 50px;
+  padding-bottom: 74px;
+}
+.features-three-column-content-down p {
+  text-align: center;
+  width: 280px;
+  margin: 0 auto;
+}
+.features-three-column-title {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.features-three-column-content-number {
+  font-size: 14px;
+  width: 130px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 17px 0;
+}
+.features-three-column-content-title {
+  font-size: 21px;
+  font-weight: bold;
+  width: 153px;
+  margin: 0 auto;
+  text-align: center;
+}
+.features-three-column-content p {
+  text-align: center;
+  width: 290px;
+  margin: 0 auto;
 }
 .features-three-column-img img {
   margin: 0 auto;
 }
 .features-two-column-img-left {
   float: left;
+  height: 256px;
 }
-.features-two-column-content-right {
-  background-color: #81b3d2;
-  padding-top: 75px;
-  padding-bottom: 75px;
+.features-two-column-img-right {
+  height: 256px;
+}
+.features-footer {
+  padding: 50px 0 130px 0;
+}
+.features-footer h2 {
+  width: 315px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.features-footer p {
+  width: 445px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /*FORM*/
@@ -151,4 +356,45 @@ input[type="button"] {
 .footer-copyright {
   float: right;
   width: 320px;
+}
+.social-btn {
+  display: inline-block;
+  vertical-align: top;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  font-size: 0;
+  position: relative;
+  text-align: center;
+}
+.icon-twitter, .icon-facebook, .icon-youtube {
+  font-size: 19px;
+  color: #ffffff;
+  line-height: 48px;
+}
+
+/*SPRITE*/
+.sprite {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+}
+
+.sprite-food {
+  width: 74px;
+  height: 70px;
+  background-position: -5px -5px;
+}
+
+.sprite-housing {
+  width: 75px;
+  height: 72px;
+  background-position: -5px -85px;
+}
+
+.sprite-souvenirs {
+  width: 64px;
+  height: 76px;
+  background-position: -5px -167px;
 }
