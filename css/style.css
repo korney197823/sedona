@@ -346,16 +346,35 @@ input[type="button"] {
 
 .footer-contacts {
   float: left;
-  width: 320px;
-  margin-right: 20px;
+  width: 352px;
+}
+.footer-contacts a {
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: bold;
+  color: black;
+  vertical-align: top;
 }
 .footer-social {
   float: left;
-  width: 200px;
+  width: 352px;
+  text-align: center;
 }
 .footer-copyright {
   float: right;
-  width: 320px;
+  width: 352px;
+  text-align: right;
+}
+.footer-copyright div {
+  display: inline-block;
+  font-weight: bold;
+}
+.footer-copyright a {
+  display: inline-block;
+  width: 115px;
+  height: 40px;
+  background: url("../img/html_academy.png") no-repeat;
+  font-size: 0;
 }
 .social-btn {
   display: inline-block;
