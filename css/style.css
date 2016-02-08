@@ -417,3 +417,73 @@ input[type="button"] {
   height: 76px;
   background-position: -5px -167px;
 }
+/*HOTELS FILTER*/
+.filter {
+  background: #7a92aa url("../img/filter-background.jpg") no-repeat;
+}
+.filter-form {
+  width: 1056px;
+  margin: 0 auto;
+}
+.filter-form h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  float: left;
+  width: 240px;
+}
+.filter-cost {
+  width: 450px;
+  float: right;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label {
+  display: block;
+  margin: 10px 0;
+  line-height: 20px;
+  padding-left: 45px;
+  position: relative;
+  cursor: pointer;
+  color: white;
+}
+input[type="checkbox"] + label::before {
+  font-family: "symbols-sedona";
+  font-size: 26px;
+  /*font-weight: bold;*/
+  color: white;
+  content: "\2610";
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 27px;
+  height: 27px;
+}
+input[type="checkbox"]:checked + label::before {
+  content: "\2611";
+}
+.result {
+  width: 1056px;
+  margin: 0 auto;
+}
+.result-total h3 {
+  display: inline-block;
+}
+.result-total ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+.result-total li {
+  display: inline-block;
+}
+.result-total-sort {
+  display: inline-block;
+}

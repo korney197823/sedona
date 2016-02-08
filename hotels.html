@@ -10,11 +10,12 @@
 </head>
 <body>
   <header class="main-header">
-      <div class="index-logo">
-        <a href="index.html"><img src="img/Logo.png" width="138" height="70" alt="sedona logo"></a>
-      </div>
+    <div class="index-logo">
+      <a href="index.html"><img src="img/Logo.png" width="138" height="70" alt="sedona logo"></a>
+    </div>
+    <div class="container-header clearfix">
       <nav class="main-navigation">
-        <ul>
+        <ul class="clearfix">
           <li>
             <a href="#">Информация</a>
           </li>
@@ -25,37 +26,32 @@
             <a href="#">Карта штата</a>
           </li>
           <li>
-            <a href="#">Гостиницы</a>
+            <a href="hotels.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
+    </div>
   </header>
   <main class="container">
     <section class="filter">
-      <form>
+      <form class="filter-form clearfix">
         <fieldset class="filter-infrastructure">
           <h2>Инфраструктура:</h2>
-          <label>
-            <input type="checkbox"><span>Бассейн</span>
-          </label>
-          <label>
-            <input type="checkbox"><span>Парковка</span>
-          </label>
-          <label>
-            <input type="checkbox"><span>WI-FI</span>
-          </label>
+          <input type="checkbox" id="ch1" checked>
+          <label for="ch1">Бассейн</label>
+          <input type="checkbox" id="ch2">
+          <label for="ch2">Парковка</label>
+          <input type="checkbox" id="ch3">
+          <label for="ch3">WI-FI</label>
         </fieldset>
         <fieldset class="filter-residence">
           <h2>Тип жилья:</h2>
-          <label>
-            <input type="checkbox"><span>Гостиница</span>
-          </label>
-          <label>
-            <input type="checkbox"><span>Мотель</span>
-          </label>
-          <label>
-            <input type="checkbox"><span>Апартаменты</span>
-          </label>
+          <input type="checkbox" id="ch4" checked>
+          <label for="ch4">Гостиница</label>
+          <input type="checkbox" id="ch5" checked>
+          <label for="ch5">Мотель</label>
+          <input type="checkbox" id="ch6" checked>
+          <label for="ch6">Апартаменты</label>
         </fieldset>
         <div class="filter-cost">
           <div>Стоимость с сутки (Р):</div>
@@ -87,8 +83,10 @@
               <a href="#">По рейтингу</a>
             </li>
           </ul>
-          <span class="result-total-up"></span>
-          <span class="result-total-down"></span>
+          div.result-total-arrow>
+            <a class="result-total-up" href="#">up</a>
+            <a class="result-total-down" href="#">down</a>
+
         </div>
       </div>
       <div class="result-hotels">
@@ -141,19 +139,21 @@
       </div>
     </section>
   </main>
-<footer class="main-footer">
+  <footer class="main-footer">
+    <div class="container-footer clearfix">
       <section class="footer-contacts">
         <a href="#">#VISITSEDONA</a>
       </section>
       <section class="footer-social">
-        <a class="social-btn social-btn-tw" href="#">Twitter</a>
-        <a class="social-btn social-btn-fb" href="#">Facebook</a>
-        <a class="social-btn social-btn-inst" href="#">Youtube</a>
+        <a class="social-btn" href="#">Twitter<span class="icon-twitter"></span></a>
+        <a class="social-btn" href="#">Facebook <span class="icon-facebook"></span></a>
+        <a class="social-btn" href="#">Youtube <span class="icon-youtube"></span></a>
       </section>
       <section class="footer-copyright">
-        <p>website by</p>
+        <div>WEBSITE BY</div>
         <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
       </section>
+    </div>
   </footer>
 </body>
 </html>
