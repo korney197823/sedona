@@ -26,7 +26,7 @@ body {
 
   font-weight: normal;
   line-height: 1em;
-  font-family: "symbols-sedona";
+  font-family: "symbols-sedona", serif;
   text-align: center;
   text-transform: none;
   text-decoration: inherit;
@@ -429,9 +429,11 @@ input[type="button"] {
   font-size: 16px;
   font-weight: bold;
   color: white;
+  margin: 25px 0;
 }
 fieldset {
   margin: 0;
+  margin-bottom: 12px;
   padding: 0;
   border: none;
   float: left;
@@ -446,7 +448,7 @@ input[type="checkbox"] {
 }
 input[type="checkbox"] + label {
   display: block;
-  margin: 10px 0;
+  margin: 23px 0;
   line-height: 20px;
   padding-left: 45px;
   position: relative;
@@ -454,7 +456,7 @@ input[type="checkbox"] + label {
   color: white;
 }
 input[type="checkbox"] + label::before {
-  font-family: "symbols-sedona";
+  font-family: "symbols-sedona", sans-serif;
   font-size: 26px;
   /*font-weight: bold;*/
   color: white;
@@ -467,6 +469,107 @@ input[type="checkbox"] + label::before {
 }
 input[type="checkbox"]:checked + label::before {
   content: "\2611";
+}
+.filter-range {
+  color: #ffffff;
+  float: right;
+  width: 330px;
+}
+.filter-range-title {
+  margin-top: 25px;
+  margin-bottom: 9px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+}
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  font-size: 0;
+}
+.price-controls::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255,255,255,0.3);
+}
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0,1,1,0.2);
+  cursor: pointer;
+}
+.range-toggle:hover {
+  background: #1c4f80;
+}
+.range-toggle-min {
+  left: 0;
+}
+.range-toggle-max {
+  left: 80%;
+}
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
+}
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
 }
 .result {
   width: 1056px;
@@ -510,6 +613,27 @@ input[type="checkbox"]:checked + label::before {
 .result-total-arrow {
   float: right;
   width: 100px;
+  text-align: right;
+}
+.result-total-arrow a {
+  font-size: 0;
+  text-decoration: none;
+}
+.result-total-up::before {
+  content: "\25b2";
+  font-family: "symbols-sedona", sans-serif;
+  font-size: 23px;
+  line-height: 20px;
+  letter-spacing: 10px;
+  color: #cccccc;
+}
+.result-total-down::before {
+  content: "\25bc";
+  font-family: "symbols-sedona", sans-serif;
+  font-size: 23px;
+  line-height: 20px;
+  letter-spacing: 10px;
+  color: #81b3d2;
 }
 .result-hotels {
   margin: 30px 0;
@@ -527,9 +651,49 @@ input[type="checkbox"]:checked + label::before {
   font-size: 21px;
   font-weight: bold;
 }
+.result-hotels-item table {
+  border-collapse: separate;
+  border-spacing: 7px 0;
+  width: 260px;
+  text-align: left;
+}
+
+.result-hotels-item td:first-child {
+  width: 110px;
+}
+
+.result-hotels-button td {
+  text-align: center;
+
+}
+.result-hotels-item-type {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  padding: 8px 0;
+}
+.result-hotels-item-price {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+.result-hotels-button .btn {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.result-hotels-button td:first-child {
+  background-color: #81b3d2;
+}
+.result-hotels-button td:last-child {
+  background-color: #766357;
+}
 .result-hotels-rating {
   float: right;
   width: 120px;
+  text-align: right;
 }
 /*STARS*/
 .rating {
