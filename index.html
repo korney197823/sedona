@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Connect font -->
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <!--Yandex Map-->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/map.js"></script>
   </head>
   <body>
     <header class="main-header">
@@ -102,41 +105,13 @@
         </div>
       </section>
       <section class="form">
-        <form action="#" method="post">
-            <div class="form-title">
-              <h2>Поиск гостиницы в Седоне</h2>
-            </div>
-            <div class="form-row clearfix">
-              <label>
-                <span class="form-date">Дата заезда:</span>
-                <input type="date">
-              </label>
-            </div>
-            <div class="form-row clearfix">
-              <label>
-                <span class="form-date">Дата выезда:</span>
-                <input type="date">
-              </label>
-            </div>
-            <div class="form-row people">
-              <label>
-                <span>Взрослые:</span>
-                <input type="number">
-              </label>
-              <div class="form-child">
-                <label>
-                  <span>Дети:</span>
-                  <input type="number">
-                </label>
-              </div>
-            </div>
-            <div class="form-row">
-              <input class="form-row people" type="button" value="НАЙТИ">
-            </div>
-        </form>
+        <div class="form-title">
+          <h2>Поиск гостиницы в Седоне</h2>
+        </div>
       </section>
-      <section class="map">
+      <section class="map" id="map">
         <!--Интерактивная карта-->
+        <div id="myMap"></div>
       </section>
     </main>
     <footer class="main-footer">
@@ -155,5 +130,36 @@
         </section>
       </div>
     </footer>
+  <div class="modal-content">
+      <form action="#" method="post">
+        <div class="form-row clearfix">
+          <label>
+            <span class="form-date">Дата заезда:</span>
+            <input type="date">
+          </label>
+        </div>
+        <div class="form-row clearfix">
+          <label>
+            <span class="form-date">Дата выезда:</span>
+            <input type="date">
+          </label>
+        </div>
+        <div class="form-row people">
+          <label>
+            <span>Взрослые:</span>
+            <input type="number">
+          </label>
+          <div class="form-child">
+            <label>
+              <span>Дети:</span>
+              <input type="number">
+            </label>
+          </div>
+        </div>
+        <div class="form-row">
+          <input class="form-row people" type="button" value="НАЙТИ">
+        </div>
+      </form>
+    </div>
   </body>
 </html>

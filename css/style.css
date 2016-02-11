@@ -271,7 +271,7 @@ h2 {
   height: 256px;
 }
 .features-footer {
-  padding: 50px 0 130px 0;
+  margin: 55px 0 50px 0;
 }
 .features-footer h2 {
   width: 315px;
@@ -291,11 +291,12 @@ h2 {
   /*box-sizing: border-box;*/
   width: 568px;
   margin: 0 auto;
-  outline: auto;
+  padding-top: 55px;
 }
 .form-title {
   background-color: #766357;
-  margin-bottom: 55px;
+  width: 568px;
+  margin: 0 auto;
 }
 .form-title h2 {
   width: 340px;
@@ -340,6 +341,11 @@ input[type="button"] {
   border: none;
   color: white;
   font-size: 21px;
+}
+/*MAP*/
+.map {
+  width: 1200px;
+  height: 593px;
 }
 
 /* FOOTER*/
