@@ -129,7 +129,9 @@ h2 {
 .content-logo {
   min-height: 510px;
   min-width: 1200px;
-  background: url("../img/background_photo.jpg") no-repeat;
+  background: url("../img/intro_deco.png") 0 453px no-repeat,
+              url("../img/welcome_sedona.png") 371px no-repeat,
+              url("../img/background_photo.jpg") no-repeat
 }
 .content-title {
   width: 580px;
@@ -490,6 +492,9 @@ input[type="checkbox"] + label::before {
 }
 input[type="checkbox"]:checked + label::before {
   content: "\2611";
+}
+.disabled {
+  color: #6a6a6a;
 }
 .filter-range {
   color: #ffffff;
