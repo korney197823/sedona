@@ -5,6 +5,8 @@ body {
   text-transform: uppercase;
   font-weight: normal;
   font-family: "PT Sans", sans-serif;
+}
+.wrapper {
   width: 1200px;
   margin: 0 auto;
 }
@@ -377,10 +379,13 @@ input[type="button"] {
   float: right;
   width: 352px;
   text-align: right;
+  font-size: 0;
 }
 .footer-copyright div {
   display: inline-block;
   font-weight: bold;
+  font-size: 14px;
+  text-align: 26px;
 }
 .footer-copyright a {
   display: inline-block;
