@@ -107,24 +107,25 @@ h2 {
   font-weight: bold;
   color: #000;
 }
-.main-header a:hover {
+.main-header li:hover {
   color: #81b3d2;
 }
-.main-header a:active {
+.main-header li:active {
   color: #766357;
 }
-.main-header a:active:hover {
+.main-header :active:hover {
   color: #604e43;
 }
-.main-header a:visited {
-  color: #b2b2b2;
-}
-.main-header a:visited:active {
-  color: #b2b2b2;
-}
+
 .main-header li:last-child {
   float: right;
   margin-right: 0;
+}
+.main-navigation .current {
+  color: #766357;
+}
+.main-navigation .current:hover {
+  color: #604e43;
 }
 .content-logo {
   min-height: 510px;
@@ -415,6 +416,9 @@ input[type="button"] {
 .modal-content {
   display: none;
 }
+.modal-content-show {
+  display: block;
+}
 /*SPRITE*/
 .sprite {
   background-image: url("../img/sprite.png");
@@ -481,7 +485,6 @@ input[type="checkbox"] + label {
 input[type="checkbox"] + label::before {
   font-family: "symbols-sedona", sans-serif;
   font-size: 26px;
-  /*font-weight: bold;*/
   color: white;
   content: "\2610";
   position: absolute;

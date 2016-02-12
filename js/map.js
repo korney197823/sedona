@@ -17,9 +17,4 @@ function init () {
     searchControlProvider: 'yandex#search'
   });
 
-  document.getElementById('destroyButton').onclick = function () {
-    // Для уничтожения используется метод destroy.
-    myMap.destroy();
-  };
-
 }
