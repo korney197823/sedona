@@ -109,6 +109,39 @@
         <div class="form-title">
           <a href="#" class="link">Поиск гостиницы в Седоне</a>
         </div>
+        <div class="modal-content">
+          <form action="#" method="post">
+            <div class="form-row clearfix">
+              <label class="label-date-in">
+                <span class="form-date">Дата заезда:</span>
+                <input type="text" placeholder="24 АПРЕЛЯ 2016">
+              </label>
+            </div>
+            <div class="form-row clearfix">
+              <label class="label-date-out">
+                <span class="form-date">Дата выезда:</span>
+                <input type="text" placeholder="4 ИЮЛЯ 2016">
+              </label>
+            </div>
+            <div class="form-row clearfix">
+              <div class="form-adults">
+                <label>
+                <span>Взрослые:</span>
+                <input type="text">
+                </label>
+              </div>
+              <div class="form-child">
+                <label>
+                  <span>Дети:</span>
+                  <input type="text">
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <input class="form-row people" type="button" value="НАЙТИ">
+            </div>
+          </form>
+        </div>
       </section>
       <section class="map" id="map">
         <!--Интерактивная карта-->
@@ -131,37 +164,7 @@
         </section>
       </div>
     </footer>
-  <div class="modal-content">
-      <form action="#" method="post">
-        <div class="form-row clearfix">
-          <label>
-            <span class="form-date">Дата заезда:</span>
-            <input type="date">
-          </label>
-        </div>
-        <div class="form-row clearfix">
-          <label>
-            <span class="form-date">Дата выезда:</span>
-            <input type="date">
-          </label>
-        </div>
-        <div class="form-row people">
-          <label>
-            <span>Взрослые:</span>
-            <input type="number">
-          </label>
-          <div class="form-child">
-            <label>
-              <span>Дети:</span>
-              <input type="number">
-            </label>
-          </div>
-        </div>
-        <div class="form-row">
-          <input class="form-row people" type="button" value="НАЙТИ">
-        </div>
-      </form>
-    </div>
+
     </div>
     <script src="js/modal.js"></script>
   </body>

@@ -13,7 +13,6 @@ body {
 @font-face {
   font-weight: normal;
   font-style: normal;
-
   font-family: "symbols-sedona";
   src: url("../fonts/symbols-sedona.woff") format("woff"),
   url("../fonts/symbols-sedona.woff2") format("woff2");
@@ -291,12 +290,17 @@ h2 {
 }
 
 /*FORM*/
+.form {
+  position: relative;
+
+}
 
 .form form {
   /*box-sizing: border-box;*/
   width: 568px;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   padding-top: 55px;
+  background: #ffffff;
 }
 .form-title {
   background-color: #766357;
@@ -325,27 +329,122 @@ h2 {
 .form-date {
   float: left;
 }
-input[type="date"] {
+.label-date-in::after {
+  position: absolute;
+  font-family: "symbols-sedona";
+  font-size: 21px;
+  content: "\e800";
+  width: 24px;
+  height: 24px;
+  left: 480px;
+  top: 60px;
+  color: #c2c2c2;
+}
+.label-date-out::after {
+  position: absolute;
+  font-family: "symbols-sedona";
+  font-size: 21px;
+  content: "\e800";
+  width: 24px;
+  height: 24px;
+  left: 480px;
+  top: 127px;
+  color: #c2c2c2;
+}
+.label-date-in input, .label-date-out input {
+  box-sizing: border-box;
   width: 346px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 35px;
   float: right;
   background-color: #f2f2f2;
   border: none;
 }
-input[type="number"] {
+.form-adults input, .form-child input {
+  box-sizing: border-box;
   width: 114px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 10px 45px;
   background-color: #f2f2f2;
+  text-align: center;
   border: none;
+}
+.form-adults input {
+  margin-left: 35px;
+}
+.form-child input {
+  margin-left: 35px;
+}
+
+.form-date {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.form-adults {
+  position: relative;
+  float: left;
+  width: 240px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
 }
 .form-child {
+  position: relative;
   float: right;
+  width: 195px;
+  text-align: right;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
 }
-.people {
-  margin-bottom: 54px;
+.form-adults span::before {
+  position: absolute;
+  font-family: "symbols-sedona";
+  font-size: 14px;
+  content: "\e802";
+  width: 24px;
+  height: 24px;
+  left: 125px;
+  top: 6px;
+  color: #c2c2c2;
 }
+.form-adults span::after {
+  position: absolute;
+  font-family: "symbols-sedona";
+  font-size: 14px;
+  content: "\e801";
+  width: 24px;
+  height: 24px;
+  left: 200px;
+  top: 6px;
+  color: #c2c2c2;
+}
+.form-child span::before {
+  position: absolute;
+  font-family: "symbols-sedona";
+  font-size: 14px;
+  content: "\e802";
+  width: 24px;
+  height: 24px;
+  left: 82px;
+  top: 6px;
+  color: #c2c2c2;
+}
+.form-child span::after {
+  position: absolute;
+  font-family: "symbols-sedona";
+  font-size: 14px;
+  content: "\e801";
+  width: 24px;
+  height: 24px;
+  left: 157px;
+  top: 6px;
+  color: #c2c2c2;
+}
+
 input[type="button"] {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -353,6 +452,22 @@ input[type="button"] {
   border: none;
   color: white;
   font-size: 21px;
+}
+::-webkit-input-placeholder {
+  color:#000000;
+  font-weight: bold;
+}
+::-moz-placeholder {
+  color:#000000;
+  font-weight: bold;
+}
+:-moz-placeholder {
+  color:#000000;
+  font-weight: bold;
+}
+:-ms-input-placeholder {
+  color:#000000;
+  font-weight: bold;
 }
 /*MAP*/
 .map {
@@ -388,7 +503,7 @@ input[type="button"] {
   display: inline-block;
   font-weight: bold;
   font-size: 14px;
-  text-align: 26px;
+  text-align: center;
 }
 .footer-copyright a {
   display: inline-block;
@@ -414,7 +529,14 @@ input[type="button"] {
 }
 /*MODAL*/
 .modal-content {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   display: none;
+  left: 316px;
+  top: 86px;
+  z-index: 10;
+  background: blueviolet;
 }
 .modal-content-show {
   display: block;
