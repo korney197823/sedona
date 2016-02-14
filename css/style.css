@@ -106,25 +106,25 @@ h2 {
   font-weight: bold;
   color: #000;
 }
-.main-header li:hover {
+.main-header a:hover {
   color: #81b3d2;
 }
-.main-header li:active {
-  color: #766357;
-}
-.main-header :active:hover {
-  color: #604e43;
+.main-header a:active {
+  color: #b2b2b2;
 }
 
 .main-header li:last-child {
   float: right;
   margin-right: 0;
 }
-.main-navigation .current {
+.current a{
   color: #766357;
 }
-.main-navigation .current:hover {
+.current a:hover {
   color: #604e43;
+}
+.current a:active {
+  color: #d6d0cc;
 }
 .content-logo {
   min-height: 510px;
@@ -301,6 +301,7 @@ h2 {
   /*margin: 0 auto;*/
   padding-top: 55px;
   background: #ffffff;
+  box-shadow: 0 3px 5px 2px #ededed;
 }
 .form-title {
   background-color: #766357;
@@ -329,27 +330,37 @@ h2 {
 .form-date {
   float: left;
 }
-.label-date-in::after {
+.calendar-in {
   position: absolute;
-  font-family: "symbols-sedona";
   font-size: 21px;
-  content: "\e800";
+  content: "";
   width: 24px;
   height: 24px;
-  left: 480px;
+  left: 475px;
   top: 60px;
   color: #c2c2c2;
 }
-.label-date-out::after {
+.calendar-in:hover {
+  color: #000000;
+}
+.calendar-in:active {
+  color: #81b3d2;
+}
+.calendar-out {
   position: absolute;
-  font-family: "symbols-sedona";
   font-size: 21px;
-  content: "\e800";
+  content: "";
   width: 24px;
   height: 24px;
-  left: 480px;
+  left: 475px;
   top: 127px;
   color: #c2c2c2;
+}
+.calendar-out:hover {
+  color: #000000;
+}
+.calendar-out:active {
+  color: #81b3d2;
 }
 .label-date-in input, .label-date-out input {
   box-sizing: border-box;
@@ -361,6 +372,13 @@ h2 {
   float: right;
   background-color: #f2f2f2;
   border: none;
+}
+.label-date-in input:hover, .label-date-out input:hover {
+  background-color: #ebebeb;
+}
+.label-date-in input:focus, .label-date-out input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
 }
 .form-adults input, .form-child input {
   box-sizing: border-box;
@@ -375,6 +393,12 @@ h2 {
 }
 .form-child input {
   margin-left: 35px;
+}
+.form-adults input:hover, .form-child input:hover {
+  background-color: #ebebeb;
+}
+.form-adults input:focus, .form-child input:focus {
+  background-color: #ffffff;
 }
 
 .form-date {
@@ -411,6 +435,12 @@ h2 {
   top: 6px;
   color: #c2c2c2;
 }
+.form-adults span:hover::before {
+  color: #000000;
+}
+.form-adults span:active::before {
+  color: #81b3d2;
+}
 .form-adults span::after {
   position: absolute;
   font-family: "symbols-sedona";
@@ -421,6 +451,12 @@ h2 {
   left: 200px;
   top: 6px;
   color: #c2c2c2;
+}
+.form-adults span:hover::after {
+  color: #000000;
+}
+.form-adults span:active::after {
+  color: #81b3d2;
 }
 .form-child span::before {
   position: absolute;
@@ -433,6 +469,12 @@ h2 {
   top: 6px;
   color: #c2c2c2;
 }
+.form-child span:hover::before {
+  color: #000000;
+}
+.form-child span:active::before {
+  color: #81b3d2;
+}
 .form-child span::after {
   position: absolute;
   font-family: "symbols-sedona";
@@ -444,6 +486,12 @@ h2 {
   top: 6px;
   color: #c2c2c2;
 }
+.form-child span:hover::after {
+  color: #000000;
+}
+.form-child span:active::after {
+  color: #81b3d2;
+}
 
 input[type="button"] {
   padding-top: 20px;
@@ -452,6 +500,13 @@ input[type="button"] {
   border: none;
   color: white;
   font-size: 21px;
+}
+input[type="button"]:hover {
+  background-color: #669ec0;
+}
+input[type="button"]:active {
+  background-color: #5496bd;
+  color: #88b6d1;
 }
 ::-webkit-input-placeholder {
   color:#000000;
@@ -507,10 +562,23 @@ input[type="button"] {
 }
 .footer-copyright a {
   display: inline-block;
-  width: 115px;
-  height: 40px;
-  background: url("../img/html_academy.png") no-repeat;
+  width: 113px;
+  height: 39px;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -10px -192px;
   font-size: 0;
+}
+.footer-copyright a:hover {
+  background: url("../img/sprite.png") no-repeat;
+  width: 113px;
+  height: 39px;
+  background-position: -10px -310px;
+}
+.footer-copyright a:active {
+  background: url("../img/sprite.png") no-repeat;
+  width: 113px;
+  height: 39px;
+  background-position: -10px -251px;
 }
 .social-btn {
   display: inline-block;
@@ -518,14 +586,22 @@ input[type="button"] {
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
+  color: #ffffff;
   font-size: 0;
   position: relative;
   text-align: center;
 }
+
 .icon-twitter, .icon-facebook, .icon-youtube {
   font-size: 19px;
-  color: #ffffff;
   line-height: 48px;
+}
+.social-btn:hover {
+  background-color: #669ec0;
+}
+.social-btn:active {
+  background-color: #5496bd;
+  color: #88b6d1;
 }
 /*MODAL*/
 .modal-content {
@@ -563,26 +639,47 @@ input[type="button"] {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   display: block;
-  margin: 0 auto;
 }
 
 .sprite-food {
   width: 74px;
   height: 70px;
-  background-position: -5px -5px;
+  background-position: -10px -10px;
+  margin: 0 auto;
 }
 
 .sprite-housing {
   width: 75px;
   height: 72px;
-  background-position: -5px -85px;
+  background-position: -10px -100px;
+  margin: 0 auto;
+}
+
+.sprite-html_academy {
+  width: 113px;
+  height: 39px;
+  background-position: -10px -192px;
+}
+
+.sprite-html_academy-down {
+  width: 113px;
+  height: 39px;
+  background-position: -10px -251px;
+}
+
+.sprite-html_academy-hvr {
+  width: 113px;
+  height: 39px;
+  background-position: -10px -310px;
 }
 
 .sprite-souvenirs {
   width: 64px;
   height: 76px;
-  background-position: -5px -167px;
+  background-position: -10px -369px;
+  margin: 0 auto;
 }
+
 /*HOTELS FILTER*/
 .filter {
   background: #7a92aa url("../img/filter-background.jpg") no-repeat;
