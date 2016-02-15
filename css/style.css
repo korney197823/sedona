@@ -5,10 +5,14 @@ body {
   text-transform: uppercase;
   font-weight: normal;
   font-family: "PT Sans", sans-serif;
+  background: #f2f2f2;
 }
 .wrapper {
   width: 1200px;
   margin: 0 auto;
+  background: white;
+  box-shadow: 3px 0 9px 1px #dbdbdb,
+              -3px 0 9px 1px #dbdbdb;
 }
 @font-face {
   font-weight: normal;
