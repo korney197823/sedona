@@ -78,13 +78,13 @@ h2 {
 }
 .container-header,  .container-footer{
   padding-top: 15px;
-  width: 1056px;
+  width: 88%;
   margin: 0 auto;
 }
 .index-logo {
   position: absolute;
   left: 540px;
-  margin-right: -68px;
+  margin-right: -69px;
 
 }
 .main-header ul {
@@ -92,16 +92,24 @@ h2 {
   padding: 0;
 }
 .main-header li {
-  float: left;
-  list-style-type: none;
-  margin-left: 0;
-
+  width: 20%;
+  list-style: none;
 }
 .main-header li:first-child {
-  margin-right: 147px;
+  float: left;
+  text-align: left;
 }
 .main-header li:nth-child(2) {
-  margin-right: 386px;
+  float: left;
+  text-align: left;
+}
+.main-header li:nth-child(3) {
+  float: right;
+  text-align: right;
+}
+.main-header li:last-child {
+  float: right;
+  text-align: right;
 }
 .main-header a {
   text-align: center;
@@ -115,11 +123,6 @@ h2 {
 }
 .main-header a:active {
   color: #b2b2b2;
-}
-
-.main-header li:last-child {
-  float: right;
-  margin-right: 0;
 }
 .current a{
   color: #766357;
