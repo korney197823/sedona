@@ -732,7 +732,7 @@ input[type="checkbox"] + label::before {
 input[type="checkbox"]:checked + label::before {
   content: "\2611";
 }
-.disabled {
+input[type="checkbox"]:disabled + label::before {
   color: #6a6a6a;
 }
 .filter-range {
