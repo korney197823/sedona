@@ -897,11 +897,15 @@ input[type="checkbox"]:disabled + label::before {
   font-size: 12px;
   line-height: 18px;
   text-decoration: none;
-  color: #81b3d2;
+  color: #b2b2b2;
   border-bottom: 1px dotted #81b3d2;
 }
-.result-total-sort a:visited {
-  color: #b2b2b2;
+.result-total-sort a:hover {
+  color: #81b3d2;
+}
+.result-total-sort a:active {
+  color: #000000;
+  border-bottom: none;
 
 }
 
@@ -943,9 +947,21 @@ input[type="checkbox"]:disabled + label::before {
   margin-right: 30px;
 }
 .result-hotels-item-title {
+  margin-left: 177px;
+}
+.result-hotels-item-title a {
+  text-decoration: none;
+  color: #000;
   font-size: 21px;
   font-weight: bold;
 }
+.result-hotels-item-title a:hover {
+  color: #81b3d2;
+}
+.result-hotels-item-title a:active {
+  color: #b2b2b2;
+}
+
 .result-hotels-item table {
   border-collapse: separate;
   border-spacing: 7px 0;
@@ -982,8 +998,27 @@ input[type="checkbox"]:disabled + label::before {
 .result-hotels-button td:first-child {
   background-color: #81b3d2;
 }
+.result-hotels-button td:first-child:hover {
+  background-color: #669ec0;
+}
+.result-hotels-button td:first-child:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+.result-hotels-button td:first-child a:active {
+  color: #88b6d1;
+}
 .result-hotels-button td:last-child {
-  background-color: #766357;
+   background-color: #766357;
+ }
+.result-hotels-button td:last-child:hover {
+  background-color: #604e43;
+}
+.result-hotels-button td:last-child:active {
+  background-color: #503e33;
+}
+.result-hotels-button td:last-child a:active {
+  color: #857871;
 }
 .result-hotels-rating {
   float: right;
