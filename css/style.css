@@ -142,7 +142,7 @@ h2 {
   min-width: 1200px;
   background: url("../img/intro_deco.png") 0 453px no-repeat,
               url("../img/welcome_sedona.png") 371px no-repeat,
-              url("../img/background_photo.jpg") no-repeat
+              #9d6562 url("../img/background_photo.jpg") no-repeat;
 }
 .content-title {
   width: 580px;
@@ -837,6 +837,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 .price-controls label {
   display: inline-block;
+  vertical-align: top;
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
@@ -877,9 +878,11 @@ input[type="checkbox"]:disabled + label::before {
   padding: 0;
   list-style: none;
   display: inline-block;
+  vertical-align: top;
 }
 .result-total li {
   display: inline-block;
+  vertical-align: top;
   margin-left: 30px;
 }
 .result-total-sort {
@@ -995,6 +998,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 .rating li {
   display: inline-block;
+  vertical-align: top;
 }
 .icon-star {
   font-size: 19px;
