@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <!--Connect style-->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Connect font -->
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <!--Yandex Map-->
@@ -122,25 +122,25 @@
               <label class="label-date-out">
                 <span class="calendar-out icon-calendar"></span>
                 <span class="form-date">Дата выезда:</span>
-                <input type="text" placeholder="4 ИЮЛЯ 2016" name="checkout">
+                <input type="text" placeholder="4 ИЮЛЯ 2016" name="checkout" required>
               </label>
             </div>
             <div class="form-row clearfix">
               <div class="form-adults">
                 <label>
                   <span>Взрослые:</span>
-                  <input type="text">
+                  <input type="text" required>
                 </label>
               </div>
               <div class="form-child">
                 <label>
                   <span>Дети:</span>
-                  <input type="text">
+                  <input type="text" required>
                 </label>
               </div>
             </div>
             <div class="form-row">
-              <input class="form-row people" type="button" value="НАЙТИ">
+              <button class="form-row people" type="submit">НАЙТИ</button>
             </div>
           </form>
         </div>
@@ -171,6 +171,6 @@
       </div>
     </footer>
     </div>
-    <script src="js/modal.min.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>
