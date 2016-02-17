@@ -348,7 +348,7 @@ h2 {
   width: 24px;
   height: 24px;
   left: 475px;
-  top: 60px;
+  top: 62px;
   color: #c2c2c2;
 }
 .calendar-in:hover {
@@ -364,7 +364,7 @@ h2 {
   width: 24px;
   height: 24px;
   left: 475px;
-  top: 127px;
+  top: 134px;
   color: #c2c2c2;
 }
 .calendar-out:hover {
@@ -382,7 +382,7 @@ h2 {
   padding-right: 35px;
   float: right;
   background-color: #f2f2f2;
-  border: none;
+  border: 2px solid #e5e5e5;
 }
 .label-date-in input:hover, .label-date-out input:hover {
   background-color: #ebebeb;
@@ -542,7 +542,7 @@ button[type="submit"]:active {
 }
 
 /* FOOTER*/
-.main-footer {
+.main-footer-index {
   position: absolute;
   height: 120px;
   left: 0;
@@ -613,6 +613,9 @@ button[type="submit"]:active {
   height: 39px;
   background-position: -10px -251px;
 }
+.footer-social {
+  font-size: 0;
+}
 .social-btn {
   display: inline-block;
   vertical-align: top;
@@ -620,9 +623,12 @@ button[type="submit"]:active {
   height: 48px;
   background-color: #81b3d2;
   color: #ffffff;
-  font-size: 0;
   position: relative;
   text-align: center;
+  margin-right: 6px;
+}
+.social-btn:last-child {
+  margin-right: 0;
 }
 
 .icon-twitter, .icon-facebook, .icon-youtube {
