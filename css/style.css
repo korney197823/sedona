@@ -875,6 +875,13 @@ input[type="checkbox"]:disabled + label::before {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.result-total::after {
+  padding-bottom: 28px;
+  content: '';
+  border-bottom: 1px solid #e5e5e5;
+  width: 1200px;
+  margin-left: -72px;
+}
 .result-total h3 {
   margin: 0;
   float: left;
@@ -973,6 +980,14 @@ input[type="checkbox"]:disabled + label::before {
 }
 .result-hotels {
   margin: 30px 0;
+}
+
+.result-hotels:after {
+  padding-bottom: 28px;
+  content: '';
+  border-bottom: 1px solid #e5e5e5;
+  width: 1200px;
+  margin-left: -72px;
 }
 .result-hotels-item {
   float: left;
