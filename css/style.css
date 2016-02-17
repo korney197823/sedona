@@ -9,6 +9,8 @@ body {
 }
 .wrapper {
   width: 1200px;
+  min-height: 100%;
+  position: relative;
   margin: 0 auto;
   background: white;
   box-shadow: 3px 0 9px 1px #dbdbdb,
@@ -540,6 +542,15 @@ button[type="submit"]:active {
 }
 
 /* FOOTER*/
+.main-footer {
+  position: absolute;
+  height: 120px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.9;
+}
 
 .footer-contacts {
   float: left;
