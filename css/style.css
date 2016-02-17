@@ -87,8 +87,8 @@ h2 {
 }
 .index-logo {
   position: absolute;
-  left: 540px;
-  margin-right: -69px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .main-header ul {
   margin: 0;
