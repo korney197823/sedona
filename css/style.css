@@ -371,7 +371,7 @@ h2 {
   padding-right: 35px;
   float: right;
   background-color: #f2f2f2;
-  border: 2px solid #e5e5e5;
+  border: 2px solid #f2f2f2;
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
@@ -382,6 +382,7 @@ h2 {
 }
 .label-date-in input:focus, .label-date-out input:focus {
   background-color: #ffffff;
+  outline: none;
   border: 2px solid #e5e5e5;
 }
 .form-adults input, .form-child input {
@@ -396,16 +397,22 @@ h2 {
   text-transform: uppercase;
 }
 .form-adults input {
+  box-sizing: border-box;
   margin-left: 35px;
+  border: 2px solid #f2f2f2;
 }
 .form-child input {
+  box-sizing: border-box;
   margin-left: 35px;
+  border: 2px solid #f2f2f2;
 }
 .form-adults input:hover, .form-child input:hover {
   background-color: #ebebeb;
 }
 .form-adults input:focus, .form-child input:focus {
   background-color: #ffffff;
+  outline: none;
+  border: 2px solid #e5e5e5;
 }
 
 .form-date {
