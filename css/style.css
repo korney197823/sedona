@@ -570,6 +570,7 @@ button[type="submit"]:active {
 .copyright-center {
   width: 200px;
   margin: 0 auto;
+  margin-top: 5px;
   font-size: 0;
 }
 .copyright-center span{
