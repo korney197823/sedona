@@ -314,20 +314,16 @@ h2 {
   background: #ffffff;
   box-shadow: 0 3px 5px 2px #ededed;
 }
-.form-title {
+.form-title a {
   background-color: #766357;
   width: 568px;
   margin: 0 auto;
-}
-.form-title a {
   display: block;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  width: 340px;
-  margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
   color: white;
@@ -376,6 +372,9 @@ h2 {
   float: right;
   background-color: #f2f2f2;
   border: 2px solid #e5e5e5;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .label-date-in input:hover, .label-date-out input:hover {
@@ -392,6 +391,9 @@ h2 {
   background-color: #f2f2f2;
   text-align: center;
   border: none;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 .form-adults input {
   margin-left: 35px;
@@ -513,22 +515,7 @@ button[type="submit"]:active {
   background-color: #5496bd;
   color: #88b6d1;
 }
-::-webkit-input-placeholder {
-  color:#000000;
-  font-weight: bold;
-}
-::-moz-placeholder {
-  color:#000000;
-  font-weight: bold;
-}
-:-moz-placeholder {
-  color:#000000;
-  font-weight: bold;
-}
-:-ms-input-placeholder {
-  color:#000000;
-  font-weight: bold;
-}
+
 /*MAP*/
 .map {
   width: 100%;
@@ -542,8 +529,7 @@ button[type="submit"]:active {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #fff;
-  opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-contacts {
