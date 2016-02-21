@@ -40,7 +40,6 @@ body {
   font-variant: normal;
   speak: none;
 }
-
 .icon-facebook::before { content: "\66"; } /* "f" */
 .icon-twitter::before { content: "\74"; } /* "t" */
 .icon-up-dir::before { content: "\25b2"; } /* "▲" */
