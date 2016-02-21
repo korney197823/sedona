@@ -293,6 +293,7 @@ h2 {
   margin: 0 auto;
   text-align: center;
   padding-bottom: 30px;
+  font-size: 30px;
 }
 .features-footer p {
   width: 445px;
@@ -348,6 +349,14 @@ h2 {
   left: 420px;
   top: 6px;
   color: #c2c2c2;
+}
+_:-moz-tree-row(hover), .calendar {
+   top: 19px;
+   left: 332px;
+ }
+_:-moz-tree-row(hover), .label-date-out .calendar {
+  top: 19px;
+  left: 329px;
 }
 .calendar:hover {
   color: #000000;
