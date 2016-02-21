@@ -992,9 +992,6 @@ input[type="checkbox"]:disabled + label::before {
   width: 135px;
   margin-right: 23px;
 }
-.result-hotels-item-title {
-  margin-left: 165px;
-}
 .result-hotels-item-title a {
   text-decoration: none;
   color: #000;
@@ -1007,63 +1004,65 @@ input[type="checkbox"]:disabled + label::before {
 .result-hotels-item-title a:active {
   color: #b2b2b2;
 }
-
-.result-hotels-item table {
-  border-collapse: separate;
-  border-spacing: 7px 0;
-  width: 260px;
-  text-align: left;
-}
-
-.result-hotels-item td:first-child {
-  width: 110px;
-}
-
-.result-hotels-button td {
-  text-align: center;
-
+.result-hotels-item-hotels {
+  padding-top: 4px;
+  padding-bottom: 5px;
+  font-size: 0;
 }
 .result-hotels-item-type {
+  display: inline-block;
+  vertical-align: top;
+  width: 110px;
+  margin-right: 6px;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
-  padding: 8px 0;
 }
 .result-hotels-item-price {
+  display: inline-block;
+  vertical-align: top;
+  width: 142px;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
 }
+.result-hotels-button {
+  font-size: 0;
+}
 .result-hotels-button .btn {
+  padding: 3px 0;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
   text-decoration: none;
   font-size: 14px;
   line-height: 21px;
   font-weight: bold;
   color: #ffffff;
 }
-.result-hotels-button td:first-child {
+.btn-more {
   background-color: #81b3d2;
+  width: 110px;
+  margin-right: 6px;
 }
-.result-hotels-button td:first-child:hover {
+.btn-more:hover {
   background-color: #669ec0;
 }
-.result-hotels-button td:first-child:active {
+.btn-more:active {
   background-color: #5496bd;
   color: #88b6d1;
 }
-.result-hotels-button td:first-child a:active {
-  color: #88b6d1;
-}
-.result-hotels-button td:last-child {
+.btn-reserve  {
    background-color: #766357;
+  width: 142px;
  }
-.result-hotels-button td:last-child:hover {
+.btn-reserve:hover {
   background-color: #604e43;
 }
-.result-hotels-button td:last-child:active {
+.btn-reserven:active {
   background-color: #503e33;
 }
-.result-hotels-button td:last-child a:active {
+.btn-reserve:active {
   color: #857871;
 }
 .result-hotels-rating {
